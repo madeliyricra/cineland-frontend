@@ -1,0 +1,54 @@
+.logo {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+header {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--tertiary);
+}
+
+header .header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    height: 80px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu .menu-item {
+    color: var(--tertiary);
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.menu .menu-item:hover,
+.menu .menu-item.active {
+    border-bottom-color: var(--tertiary);
+}
+
+header .header-container,
+main .main-container,
+footer .footer-container {
+    max-width: var(--device-width-desktop);
+    min-width: var(--device-width-mobile);
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    color: white;
+}

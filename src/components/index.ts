@@ -1,0 +1,1 @@
+export {default as PremierCard} from "./premier-card";

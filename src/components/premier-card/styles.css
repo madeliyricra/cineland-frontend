@@ -1,0 +1,32 @@
+.premier-card {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.premier-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}
+
+.premier-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.premier-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.premier-card-description {
+    font-size: 1rem;
+    color: #666;
+}
