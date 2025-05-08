@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# CineLand
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web que utiliza un frontend desarrollado con **React**, **TypeScript**, y **Vite**, un backend construido con **Node.js**, y una base de datos en **Firebase**. Este stack proporciona una arquitectura moderna, rápida y escalable.
 
-Currently, two official plugins are available:
+![image](https://github.com/user-attachments/assets/24c6c4f9-47f6-4ac0-860f-8600fa513413)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+### Frontend
+- **React**: Biblioteca para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipado estático.
+- **Vite**: Herramienta de desarrollo rápida con soporte para HMR (Hot Module Replacement).
+- **ESLint**: Configurado para mantener un código limpio y consistente.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Backend
+- **Node.js**: Entorno de ejecución para JavaScript en el servidor.
+- **Express**: Framework minimalista para construir APIs RESTful.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Base de datos
+- **Firebase**: Plataforma de backend como servicio (BaaS) utilizada para autenticación, almacenamiento de datos en tiempo real y hosting.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+![image](https://github.com/user-attachments/assets/385bc587-0e38-4369-b46d-0971a6babca1)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Configuración del proyecto
+
+### Requisitos previos
+Asegúrate de tener instalados:
+- **Node.js** (v16 o superior)
+- **npm** o **yarn**
+- Una cuenta de Firebase configurada
+
+### Instalación
+
+   ```bash
+   git clone https://github.com/madeliyricra/cineland-frontend.git
+   cd cineland-frontend
+   npm i
+   npm run dev
+   ```
