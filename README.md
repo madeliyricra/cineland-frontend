@@ -51,3 +51,6 @@ A continuación se describen las variables de entorno necesarias para ejecutar e
 
 Debes agregar estas variables en un archivo `.env` en la raíz del proyecto:
 
+### NOTA
+Tarjeta de pruebas: https://developers.payulatam.com/latam/es/docs/getting-started/test-your-solution.html
+
