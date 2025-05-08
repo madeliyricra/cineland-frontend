@@ -19,6 +19,11 @@ h2 {
     margin-bottom: 20px;
 }
 
-.form-full {
-    grid-column: span 2;
+@media  (max-width: 768px) {
+    .checkout-container form {
+        grid-template-columns: 1fr;
+    }
+    form .form-group:first-child {
+        grid-column: span 1 !important;
+    }
 }

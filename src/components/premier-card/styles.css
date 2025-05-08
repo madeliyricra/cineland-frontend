@@ -83,3 +83,19 @@
     font-size: 1.3rem;
     color: var(--primary);
 }
+
+
+@media  (max-width: 768px) {
+    .premier-card img {
+        width: 80px;
+        height: 110px;
+    }
+
+    .premier-card-title  {
+        font-size: 1.2rem;
+    }
+
+    .premier-card-description {
+        font-size: 0.85rem;
+    }
+}
