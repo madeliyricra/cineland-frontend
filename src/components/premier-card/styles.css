@@ -1,5 +1,7 @@
 .premier-card {
-    display: flex;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
     justify-content: left;
     gap: 2rem;
     padding: 1.5rem 2rem;
@@ -15,7 +17,7 @@
 }
 
 .premier-card img {
-    width: 150px;
+    width: 120px;
     height: 150px;
     object-fit: cover;
 }
@@ -23,10 +25,61 @@
 .premier-card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: var(--primary);
+    margin-bottom: .5rem;
 }
 
 .premier-card-description {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 1rem;
     color: #666;
+}
+
+.premier-checkbox {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+.premier-checkbox input {
+    display: none;
+}
+
+.premier-checkbox .icon {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.premier-checkbox input:checked + .icon {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.premier-checkbox input:checked + .icon::after {
+    content: "✔";
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+}
+
+.premier-card-price {
+    text-align: right;
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--primary);
 }

@@ -1,0 +1,5 @@
+export const PAYU_URL: string =  'https://sandbox.api.payulatam.com/payments-api/4.0/service.cgi'
+export const PAYU_API_KEY: string = '4Vj8eK4rloUd272L48hsrarnUA'
+export const PAYU_MERCHANT_ID: string = '508029'
+export const PAYU_ACCOUNT_ID: string = '512323'
+export const PAYU_API_LOGIN: string = 'pRRXKOl8ikMmt9u'

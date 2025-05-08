@@ -1,24 +1,15 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
-import { FaUser } from "react-icons/fa6";
+import links from "../utils/links";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="layout">
       <header>
         <section className="header-container">
-          <Link to="/">
+          <Link to={links.root}>
             <h1 className="logo">CineLand</h1>
           </Link>
-          <nav className="menu">
-            <Link className="menu-item" to="/">
-              Home
-            </Link>
-            <Link className="menu-item" to="/sweet-shop">
-              Dulcería
-            </Link>
-          </nav>
-          <FaUser />
         </section>
       </header>
       <main>

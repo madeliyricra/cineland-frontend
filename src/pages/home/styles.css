@@ -1,6 +1,146 @@
-.premiers-container {
+.home-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr auto;
     gap: 1.5rem;
     margin: 2rem 0;
+}
+
+.summary {
+    position: sticky;
+    top: 2rem;
+    padding: 2rem;
+    width: 300px;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.summary button {
+    width: 100%;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.step-number {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.step-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.step.active .step-number {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.step.active .step-label {
+    color: var(--primary);
+}
+
+.step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -50%;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    z-index: -1;
+}
+
+.step.active:not(:last-child)::after {
+    background-color: var(--secondary);
+}
+
+.summary-premiere {
+    text-align: center;
+}
+
+.summary-premiere img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.summary-total {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.summary-item {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 10px;
+    padding: .5rem;
+    border-bottom: 2px solid #eee;
+}
+
+.summary-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.summary-item-title {
+    font-size: .9rem;
+}
+
+.summary-item-content {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.summary-item-attribute {
+    font-size: .7rem;
+    font-weight: 400;
+}
+
+.summary-candies {
+    overflow: auto;
+    max-height: 240px;
+}
+
+.summary-candies::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; 
+}
+
+.modal-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.modal-login  button {
+    width: 100%;
 }

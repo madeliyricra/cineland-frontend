@@ -1,0 +1,48 @@
+.candy-card {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.candy-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.candy-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    object-position: center;
+}
+
+.candy-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    text-align: center;
+}
+
+.quantity-controls button {
+    border-radius: 100%;
+}
+
+.quantity-controls input {
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    text-align: center; 
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    display: inline-grid;
+    place-items: center;
+}

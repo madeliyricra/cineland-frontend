@@ -4,7 +4,7 @@ import {
   Routes as Switch,
   type RouteProps,
 } from "react-router-dom";
-import { Home, NotFound, SweetShop } from "../pages";
+import { Home, NotFound, Order } from "../pages";
 import links from "../utils/links";
 import Layout from "../layout";
 
@@ -14,8 +14,8 @@ const routes: RouteProps[] = [
     element: <Home />,
   },
   {
-    path: links.sweetShop,
-    element: <SweetShop />,
+    path: links.order,
+    element: <Order />
   },
   {
     path: links.notFound,

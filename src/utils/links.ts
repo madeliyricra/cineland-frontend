@@ -1,8 +1,7 @@
 const links = Object.freeze({
   root: "/",
   notFound: "*",
-  login: "/login",
-  sweetShop: "/sweet-shop",
+  order: '/order/:id'
 });
 
 export default links;
