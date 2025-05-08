@@ -38,3 +38,16 @@ Asegúrate de tener instalados:
    npm i
    npm run dev
    ```
+
+### Variables de Entorno
+
+A continuación se describen las variables de entorno necesarias para ejecutar el proyecto:
+
+| Variable      | Descripción                                       | Ejemplo                          |
+|---------------|---------------------------------------------------|----------------------------------|
+| `VITE_API`    | URL base del backend para las peticiones HTTP     | `https://api.mi-backend.com`    |
+
+#### Uso
+
+Debes agregar estas variables en un archivo `.env` en la raíz del proyecto:
+
