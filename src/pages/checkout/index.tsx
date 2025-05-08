@@ -1,4 +1,4 @@
-import { forwardRef, useState, type Ref } from "react";
+import { forwardRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import "./styles.css";
 import type { ICheckoutProps, IFieldProps } from "./props";
