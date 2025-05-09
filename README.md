@@ -4,6 +4,9 @@ Este proyecto es una aplicación web que utiliza un frontend desarrollado con **
 
 ![image](https://github.com/user-attachments/assets/24c6c4f9-47f6-4ac0-860f-8600fa513413)
 
+### NOTA
+Tarjetas de prueba para pago con PayU: https://developers.payulatam.com/latam/es/docs/getting-started/test-your-solution.html
+
 ## Tecnologías utilizadas
 
 ### Frontend
@@ -51,6 +54,4 @@ A continuación se describen las variables de entorno necesarias para ejecutar e
 
 Debes agregar estas variables en un archivo `.env` en la raíz del proyecto:
 
-### NOTA
-Tarjeta de pruebas: https://developers.payulatam.com/latam/es/docs/getting-started/test-your-solution.html
 
